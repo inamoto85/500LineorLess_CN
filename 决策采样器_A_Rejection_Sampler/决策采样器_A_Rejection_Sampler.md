@@ -250,7 +250,7 @@ def sample(self, n):
 ### 实现PMF的代码
 
 既然我们已经看到了在对数空间工作的重要性，我们首先实现计算log-PMF的程序：
-```
+```python
 def log_pmf(self, x):
     """Evaluates the log-probability mass function (log-PMF) of a
     multinomial with outcome probabilities `self.p` for a draw `x`.
@@ -344,7 +344,7 @@ inf
 # 回到采样魔法装备
 
 现在多项分布的函数已经写好了，我们现在使用它们来随机生成魔法装备。为了这个目标，我们建立了一个叫做`MagicItemDistribution`的类，位于`rpg.py`文件里。
-```
+```python
 class MagicItemDistribution(object):
 
     # these are the names (and order) of the stats that all magical
